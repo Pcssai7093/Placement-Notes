@@ -18,15 +18,18 @@ Class: Blueprint/template for an object(data)
 
 Object: Instance of a Class
 
+
+
 Encapsulation: Binding/clubbing Data and methods into together by hiding is called Encapsulation
 (hiding implementation or unwanted information)
+
+
 
 Polymorphism: Behaving differently in different conditions/ways.
 
 Compile Time Polymorphism: polymorphism that happens at compile time
 Also called as static binding.
 occurs during method overloading
-
 
 Runtime polymorphism: Polymorphism that happens at run time
 Also called as Dynamic binding.
@@ -37,4 +40,29 @@ if the signature is same it is called method overriding else it is called method
 * method overloading is happens in the same class
 * method overriding is heppens between child and parent class
 
+
+Inheritance: inheriting the methods and attributes from the parent
+
+
+Abstraction: Simplyfying complex systems only expose necessary to child classes to implementation
+
+
+Interface: Class with only method decalarations but not definitions
+
+
+Exception: interrupt during the runtime execution of program
+
+
+** In java sysout only works insides methods or code blocks like (static or intialisation blocks)
+
+* Every type of access variable and methods are either accessable or inherited to child class in java except the
+private variables and methods
+
+* protected and public variables can be inherited
+* static and final final variables cannot be inherited but accessible by child class
+* private variabels are not accessable and inherited to parent classes
+
+
+static and final variables/methods can be hid with same name in child class
+if not they refer to the parent data
 
