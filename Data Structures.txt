@@ -17,3 +17,11 @@ Arrays Vs Linked List
 2) size of the array is fixed but not in Lists
 3) crud operation time complexity are different
 
+Asysmptotic analysis
+-----------------------
+The mathematical analysis of algorithm using math bounds
+
+Binary Trees
+---------------------------------------
+
+Applications: indexing,decision trees
