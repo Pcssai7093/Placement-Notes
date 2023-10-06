@@ -1,0 +1,41 @@
+Update command
+----------------------------------------------------------------------------
+1) update table_name set col_name=value where condition  - Normal update statement
+2) update table with join
+Example
+------------
+UPDATE employees
+        INNER JOIN
+    merits ON employees.performance = merits.performance 
+SET 
+    salary = salary + salary * percentage;
+
+Link to referece: https://www.mysqltutorial.org/mysql-update-join/
+
+
+Delete command
+-----------------------------------------------------------------------------
+1) delete from table_name where condition - Normal delete statement
+2) delete table with joins
+
+Example
+DELETE T1 
+FROM T1
+        LEFT JOIN
+    T2 ON T1.key = T2.key 
+WHERE
+    T2.key IS NULL;
+
+Link to reference: https://www.mysqltutorial.org/mysql-delete-join/
+
+
+MySql Transactions command:
+------------------------------------------------------------------------------------------
+-> usefull for doing temporary tasks on data and rolling back to original state on doings
+
+command
+--------------
+start transaction - command to start a trasactions
+savepoint savepointName - command to create a savepoint
+rollback - rollaback to start of transaction
+rollback to savepointName - roll back to the start of savepoint

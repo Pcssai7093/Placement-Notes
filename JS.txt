@@ -1,0 +1,70 @@
+Js arrow function vs Normal functions
+
+1) arrow function dont have this binding
+-> this in a function points to the object which invokes it.
+->this is a function points to an class object if the function is inside an object
+-> by default the this points to global window object
+2)Arrow functions cannot be used as constructors
+3)Arrow function cannot be declared they are functional expressions
+4)In js function declarations are hoisted but not functional expressions
+
+
+
+Node js event loop
+---------------------------
+Libuv a library in nodejs manages the event loop. event loop is the way how nodejs manages asynchronous programming.
+This event loop has micro task queues and macro task queues(timer and io  queues)
+
+preferce of aynchronous execution
+1) non aync code
+2) micro tasks (promisess)
+3) timer queue
+4) io queue
+
+
+var vs let
+--------------------------
+variable declared with var have global scope and hoisted.
+variable declared with let have block scope and are not hoisted.
+
+* self invoking functions in js
+-----------------------------------
+funtion fun(){
+code
+}();
+
+
+Currying in js
+-----------------------
+Technique to transform a function of n arguments to n functions of one or fewer arguments
+
+example:-
+functionc add(a){
+	return function(b){
+return a+b;
+}
+}
+add(2)(3)
+
+
+Scope and Scope Chain in js
+-------------------------------------
+Scope is accessibility of variable at various parts of one's code.
+1) Global scope
+2) Block scope
+3) Local or Function scope
+
+Closures 
+-----------------------------
+Ability of a function remember the variable and functions that are declared in outer scope.
+
+
+*** Object prototyping in js
+-------------------------------------------
+All js object inherit properties from a prototype.
+
+DOM
+-----------------------------------
+Document Object Model is a Programming Interface for Html and XML documents
+
+

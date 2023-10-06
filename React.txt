@@ -1,0 +1,60 @@
+Virtual DOM: lightweight replica of dom used for optimized rendering. check difference from actual dom and virtual Dom and only update the differences in the actual dom. Uses diffing algorithme to update the change. This system avoid uneccessary building of whole tree.
+
+
+---------------------------------------------------------------------------------------
+
+react different way of passing props
+
+import React from 'react';
+
+// Define the ChildComponent
+function ChildComponent(props) {
+  return (
+    <div>
+      <h2>This is the ChildComponent</h2>
+      {props.children} {/* Render the content passed as children */}
+    </div>
+  );
+}
+
+// Define the ParentComponent
+function ParentComponent() {
+  return (
+    <div>
+      <h1>ParentComponent</h1>
+      {/* Render ChildComponent with opening and closing tags */}
+      <ChildComponent>
+        <p>Hello from ParentComponent!</p>
+        <p>Additional content here.</p>
+      </ChildComponent>
+    </div>
+  );
+}
+
+export default ParentComponent;
+---------------------------------------------------------------------------------------
+
+For example, if we wanted to write some code that focuses a search input when the users use the key combination Control + K.
+
+import { useWindowEvent } from "@mantine/hooks";
+import { useRef } from "react";
+
+function Header() {
+	const inputRef = useRef();
+
+  useWindowEvent("keydown", (event) => {
+    if (event.code === "KeyK" && event.ctrlKey) {
+      event.preventDefault();
+      inputRef.current.focus();
+    }
+  });
+  
+  return <input ref={inputRef} />
+}
+
+---------------------------------------------------------------------------------------
+
+useContext hook is used to consume the context by context.provider
+useMemo is used to memoize a function result or computation it returns a memoized values
+useCallback is used to memoize a function preventing uneceesay recreating of functions on component rerendings
+useMemo and useCallback both accept dependency array.

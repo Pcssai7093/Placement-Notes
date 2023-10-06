@@ -1,0 +1,26 @@
+designing ,developing, testing deploying
+designing, developing , testing deploying
+designing, developing, testing , deploying
+
+database management, server optimization and load balancing
+database management, server optimization and load balancing
+database management, server optimization and load balancing
+database management, server optimization and load balancing
+database management, server optimization and load balancing
+
+scalable systems
+1)load balancing
+2)caching
+3)database sharding
+4)cloud services
+5)auto scalable services
+6)micro-service architecture
+7)data base optimisation
+8) using cdn for media assets
+9) distribute processing
+
+
+
+Netflix uses aws as iaas
+serverless computing: azure functions and aws lambda
+

@@ -1,0 +1,148 @@
+CSS Flexbox
+---------------------------------
+FlexBox is a layout model in CSS helps in designing complex Layouts.
+
+FlexBox architecture:-
+There is Main axis and cross axis.
+Main axis is the direction of flex items and cross axis is to the perpendular of main axis.
+If the flex direction is row the main axis is along the row and vice versa.
+
+style properties of flex are:
+flex-direction,
+display,
+justify-content,
+align-content,
+align-items,
+flex-grow,
+flex-wrap,
+flex-shrink,
+order,
+align-self 
+
+
+**
+flex direction:- row,row-reverse,column,column-reverse  
+-> specify the direction of the flex items
+
+Justify-content:- arranges the flex-item along the main axis.
+->(arranges along the row if flex-direction is row as it is the main axis here.)
+options:-flex-start,flex-end,center,space-between,space-around,space-evenly
+
+align-Content-: arrange the items along the cross axis
+** This property works only when flex wrap is set to wrap(flex-wrap:wrap)
+flex-wrap is the flex items are wrapped down if they dont fit it in a single row dinamically.
+Option: flex-start,flex-end,center,space-between,space-around,spcace-evenly,strech (***)
+
+**align-items: arrange the flex-items along the cross axis but arrangement happens inside the allowed sub-flex container the the item of same main axis.
+
+
+
+align-items vs align-content
+---------------------------------------------------------------------
+align-content: arrange the overall flex-content on a whole.
+align-items: arrange the items of same main axis in their specified sub-flex width.
+Note (
+By default flex distributes equal with the the items along the cross axis and it share equaly the all cross axis elements. This equal widht is sub-flex container.
+)
+
+Note: By default no cross axis arrangment is specified and no height of the flex-items is specified the flex items get equal height shared along the cross axis.if cross axis arrangement specified they take the height of they content
+
+
+align-self: this is the property of flex-items, used to arrange the flex item along the cross axis.its arrangment is same as align-items but it works on individual flex items
+options: flex-start,flex-end,center,strech,baseline
+
+
+main-axis:
+1) justify-content
+cross-axis:
+1) align-content
+2) align-items
+3) align-self
+
+
+
+***
+flex-grow: flex item property that dynamically sizes elements as screen dynamically grows along the main axis
+Note: work only when flex-wrap is not present.
+
+** This dynamical incresing size only happens after the flex items crosses their actual width.
+The flex-grow propery takes integers ****
+
+flex-grow: 0 (Default): This is the default value, and it means that the flex item should not grow at all when there's extra space available. It will retain its original size based on its content.
+
+flex-grow: 1 (Positive Value): When you set flex-grow to 1, it indicates that the flex item should grow proportionally with other flex items that also have a flex-grow value of 1 when there is extra space available along the main axis. All items with a flex-grow value of 1 will share the available space equally.
+
+flex-grow: <number> (Custom Value): You can specify a custom number for flex-grow, which represents the proportion of available space the item should occupy relative to other flex items. For example, if you set flex-grow to 2 on one item and 1 on another, the first item will get twice as much of the available space as the second item.
+
+Note : flex-items shrink by default if there is no space availlable. flex-wrap is not mentioned
+
+Flex-basis:
+initial size of the flex-item
+
+
+CSS grids:
+------------------------------------------
+Grid is a layout model is css used in designing complex layouts
+
+Grid Architecture
+-------------------------------
+Grid items are distributed along main axis and cross axis.
+
+properties of css grids are:
+grid-template-columns,
+grid-template-rows,
+grid-template-areas,
+justify-content
+justify-items
+align-content
+align items
+colomn and row gaps
+place-items
+place-content
+
+grid child properties:-
+grid-column:start/end
+grid-row:start/end
+grid-area
+align-self,
+justify-self,
+
+
+grid-template-columns:- used to specify width and number of columns in the grid layout
+example: grid-template-columns:100px auto 100px tells that grid has 3 columns and width of the two items are fixed and one items is exapandle across main axis if no any main axis alignment is specified.
+
+note: auto width only works no any main axis alignment is specified.
+
+
+column-gap: specifying gap between columsn
+row-gap:gap between rows
+
+justify-content: arranging the whole grid along main axis 
+
+justify-items: arrangment of items along the main axis but arrangment happens in the sub containers in the grid.i.e items are are arranged in the grid box. (item arrangement in the individual grid box space)
+
+
+align-content: arraongment of whole grid along cross axis
+
+align-items: arrangment of items along the cross axis but with in the specified grid item space.
+
+Note:
+By default the grid elements are strected to fill allocated grid space. on using aligments they are modified
+
+
+grid-column-start,grid-column-end:- used to specify the position and span size of the of the grid items along the main axis
+
+position of items in grid are denoted by number from 1 to (number of column+1)
+refer:https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/
+
+grid-row-start,grid-row-end:- used to specify the position and span size of the grid items along the cross axis
+
+Note: *** only one size spanning of one direction works either column or row direction but position can be changed in both.
+
+
+*** Note: use "fr" unit in grid as it the shares the width for all items along the grid axis.
+
+
+
+
+

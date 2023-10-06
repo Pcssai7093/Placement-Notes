@@ -1,0 +1,68 @@
+show dbs - list the databases
+use dbname- move to the existind db director(connect to the database)
+use dbname- creates a new directory if not exists
+db.dropDatabase() - drop the selected/connected database
+show collections- list all the collections
+db.createCollection("collectionName") - creating a new Collection
+db.collectionName.drop() - droping a collection
+db.collectionName.insert(data) - insert documents into the collection (data is an object here) 
+db.collectionName.find()-list all the document in the collection
+db.collectionName.find({},{colName:true/false,colName:true/false}) - select the columns in the collection that should be displayed
+// by default _id is displayed
+db.collectionName.find({colName:CONDITION/VALUE})- filtering row with col value
+db.collectionName.find({name:"raju"}) - filter docs where name is "raju"
+db.collectionName.find({age:{$lte:20}}} - filter docs where age is less than equal to 20
+
+update
+db.collectionName.updateOne({condition},{$set:{colname:value,colname2:value}}) - update the one doc with satify the condition are updated
+db.collectionName.update({condition},{$set:{colname:value,colname2:value}}) - update multiple docs
+
+
+
+db.collectionName.findOne()
+db.collectionName.insertMany([])
+db.collectionName.deleteOne()
+db.collectionName.deleteMany()
+
+"selectors and query selectors starts with $"
+$lte
+$lt
+$gte
+$gt
+$and
+$or
+$not
+
+------- ***  Note: Here users is the collection name
+
+db.users.find({items:{$elemMatch:{$eq:1}}},{items:true}) - returns the documents where items arrays has value 1
+db.users.find({items:{$all:[1,2]}},{items:true}) - return the documents where items arrays has value [1,2]
+db.users.find({items:{$size:3}},{items:true})- returns all the documents where size of items array is 3
+ db.users.find({items:{$not:{$elemMatch:{$eq:1}}}}).pretty() - returns the document where items array has dont have value 1
+db.users.find({$and:[{items:{$size:3}},{items:{$not:{$elemMatch:{$eq:2}}}}]}).pretty() - array size is 3 and no 2 in array (combining multiple condition using and)
+
+
+Regex
+db.users.find({colName:{$regex:"regeExpression"}})
+
+Sorting
+db.users.find().sort({colName:1/posvalue}) -sorting in ascending order
+db.users.find().sort({colName:-1/negvalue})- sorting in desc order by colName
+db.users.find().sort({colName1:-1/negvalue,colName2:1/posvalue})- sorting in desc order by colName1 and asc order by colName2 if there are any duplicated with colName
+
+limit rows
+db.user.find().limit(NUMBER)
+
+count rows
+db.users.find().count()
+
+skip rows
+db.myColl.find().sort({_id: 1}).skip(3).limit(6);
+db.myColl.find().sort({_id: 1}).limit(6).skip(3);
+
+Note : ***** order doesn't matter produce the same results
+
+indexes
+db.users.getIndexes() -- list all the indexes
+
+Aggregration and joining and advanced mongo
