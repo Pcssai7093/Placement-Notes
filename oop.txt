@@ -1,0 +1,40 @@
+OOP refers to the object oriented programming.
+It is a programming paradigm where basic organisation of code is as objects
+objects have attributes and method
+
+
+Imperative Programming paradigm
+-- focuses of how to do a task
+
+Declarative Programming paradigm
+
+Features of OOP (also called 4 pillars of Object Oriented Programming)
+* Encapsulation
+* Polymorphism
+* Inheritance
+* Abstraction
+
+Class: Blueprint/template for an object(data) 
+
+Object: Instance of a Class
+
+Encapsulation: Binding/clubbing Data and methods into together by hiding is called Encapsulation
+(hiding implementation or unwanted information)
+
+Polymorphism: Behaving differently in different conditions/ways.
+
+Compile Time Polymorphism: polymorphism that happens at compile time
+Also called as static binding.
+occurs during method overloading
+
+
+Runtime polymorphism: Polymorphism that happens at run time
+Also called as Dynamic binding.
+Occurs duing method overloading
+
+Arguments and functions name are part of method signature
+if the signature is same it is called method overriding else it is called method overloading
+* method overloading is happens in the same class
+* method overriding is heppens between child and parent class
+
+
