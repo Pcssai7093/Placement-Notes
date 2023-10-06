@@ -1,0 +1,19 @@
+Data Structure: The way of organising Data
+
+Linear Data Structures: The data is stored sequeuntialy or sequential connection between data.
+EX: arrays,Linked List, stack and queue
+
+Stack is a linear Data Structure that follow LIFO
+
+Queue is a Linear Data Structure that follow FIFO
+
+Linked List:  Series of nodes connected by links or reference
+
+Types of LinkedList: Singly LinkedList, Doubly LinkedList, Circular Linked List, Doubly Circular LinkedList
+
+Arrays Vs Linked List
+--------------------------------------------------------------------------
+1) Data in arrays are stored in continuous memory locations, Data in Linked Lists are not stored in continuous memory
+2) size of the array is fixed but not in Lists
+3) crud operation time complexity are different
+
