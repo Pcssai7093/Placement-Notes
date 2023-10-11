@@ -89,7 +89,35 @@ using the divide and conquer method to divide the arrays in sorted subarray and 
 Quick sort
 --------------------------------------------------------------------
 
+algorithm
 
+a=[4,3,2,12,10,5]
+
+def getpivot(arr,s,e):
+    # n=e+1
+    pi=e
+    p=q=s
+    while(q<pi):
+        if(arr[q]<arr[pi]):
+            arr[q],arr[p]=arr[p],arr[q]
+            p+=1
+            q+=1
+        else:
+            q+=1
+    arr[pi],arr[p]=arr[p],arr[pi]
+    print(p)
+    return p
+
+
+def quicksort(arr,s,e):
+    if(s<e):
+        pi=getpivot(arr,s,e)
+        quicksort(arr,s,pi-1)
+        quicksort(arr,pi+1,e)
+    
+quicksort(a,0,5)
+print(a)
+    
 
 
 
