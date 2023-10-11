@@ -1,4 +1,11 @@
 11/10/23
 
-1) subarray sum divisible by k
-2) quicksort algorithm
+1. subarray sum divisible by k
+2. quicksort algorithm
+
+Detect cycle in undirected Graph
+** dfs can be used and need to find the backedge for the detection of cycle
+** detect cylce using dfs in directed and undirected is different
+
+- in undirected graph we use single global visited array to check back edge
+- in directed graph we use visited path to check the back edge
