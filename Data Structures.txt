@@ -25,3 +25,72 @@ Binary Trees
 ---------------------------------------
 
 Applications: indexing,decision trees
+
+
+Bubble Sort (sorted part and unsorted part are involved)
+--------------------------
+compares two adject elements and swaps till the end of unsorted part of array to the end until they are in the intended order
+** largest element in unsorted array will be put at the end in every iteration
+* multiple swaps for iteration
+
+Selection Sort (sorted part and unsorted part are involved)
+---------------------------------------------------------
+selecting the smallest element in unsorted part of arrays and putting it in the start of the unsorted part of array
+** minimum element in the unsorted part of array is put at the start
+** single swap for iteration
+
+
+Insertion Sort
+----------------------------------------------------------------------
+insertion sort select element in unsorted array and place it in the right position
+code
+a=[3,4,1,2,7,5]
+n=len(a)
+i=0
+for i in range(1,n):
+    key=a[i]
+    j=i-1
+    
+    while(j>=0 and a[j]>key):
+        a[j+1]=a[j]
+        j-=1
+    a[j+1]=key
+print(a)
+ * multiple swaps for iteration
+  
+
+*** Note: insertion sort works very well saves time if the array is partially sorted
+
+Counting Sort
+---------------------------------------------------------------
+used in sorting a range of elements (need to be modified if they are negative values)
+default process works for postive values
+not inplace
+refer: https://www.programiz.com/dsa/counting-sort
+
+Radix
+------------------------------------------------------------------
+extension of another sort where sorting happend digit by digit position of number
+from 1s place to nth place
+
+
+Bucket Sort
+------------------------------------------------------------------
+Sorting algorithm that groups the element
+sort the individual groups 
+and merge the sorted groups
+
+
+
+Merger sort
+-----------------------------------------------
+using the divide and conquer method to divide the arrays in sorted subarray and merging them
+
+Quick sort
+--------------------------------------------------------------------
+
+
+
+
+
+
