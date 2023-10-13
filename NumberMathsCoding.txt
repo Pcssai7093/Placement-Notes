@@ -46,3 +46,28 @@ The idea is simple, since p is prime, it cannot be factorized. So it must either
 
 Generalization of Euclid’s lemma:
 If p divides x*y and p is relatively prime to x, then p must divide y. In the above example, 5 is relatively prime to 6, therefore it must divide 15.
+
+
+----------------------------------------
+
+sum of divisors of a number
+
+
+def fun(n):
+    i=1
+    s=0
+    while(i*i<=n):
+        if(n%i==0):
+            d1=i
+            print(d1)
+            s+=d1
+            d2=int(n/i)
+            if(d2!=d1):
+                print(d2)
+                s+=d2
+        i+=1
+    print("res"+str(s))
+
+fun(24)
+
+---------------------------------------------------------
