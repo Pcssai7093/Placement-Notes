@@ -12,3 +12,37 @@ lcm of two numbers
 --------------------------
 ***********
 a*b=lcm(a,b)*gcd(a,b)
+
+
+------------------------------
+
+**** program to find prime factors of a number
+
+def pf(n):
+    while(n%2==0):
+        print(2)
+        n=n/2
+    while(n%3==0):
+        print(3)
+        n=n/3
+    k=5
+    while(n>0):
+        while(n%k==0):
+            print(k)
+            n=n/k
+        k+=2
+pf(9375)
+
+-------------------------------------
+C(n, k) = C(n-1, k-1) + C(n-1, k)
+
+---------------------------------------
+
+Euclid’s lemma states that if a prime p divides the product of two numbers (x*y), it must divide at least one of those numbers.
+
+For example x = 15, y = 6 and p = 5. p divides the product 15*6, it also divides 15.
+
+The idea is simple, since p is prime, it cannot be factorized. So it must either be completely present in x or in y.
+
+Generalization of Euclid’s lemma:
+If p divides x*y and p is relatively prime to x, then p must divide y. In the above example, 5 is relatively prime to 6, therefore it must divide 15.
