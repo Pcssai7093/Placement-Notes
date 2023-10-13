@@ -58,3 +58,36 @@ useContext hook is used to consume the context by context.provider
 useMemo is used to memoize a function result or computation it returns a memoized values
 useCallback is used to memoize a function preventing uneceesay recreating of functions on component rerendings
 useMemo and useCallback both accept dependency array.
+
+---------------------------------------------------------
+Babel
+
+ Babel is a JavaScript compiler that primarily focuses on transforming modern JavaScript code (ES6/ES2015 and later) into older versions of JavaScript (usually ES5). It ensures that your code is compatible with a wider range of browsers and environments.
+
+
+-------------------------------------------------------
+
+Webpack
+
+ Webpack is a module bundler and build tool. Its primary purpose is to bundle various assets, including JavaScript, CSS, images, and more, into a dependency graph. It can also optimize and manage these assets for efficient use in web applications.
+
+
+--------------------------------------------------------------
+Client side rendering
+In React by default logic to display frontend is written and rendered on the client side
+** ( react support server side rendering)
+
+--------------------------------------------------------------
+
+****Hooks (hooks are introduced in react 16)
+
+React Hooks are the built-in functions that permit developers for using the state and lifecycle methods within React components. These are newly added features made available in React 16.8 version. Each lifecycle of a component is having 3 phases which include mount, unmount, and update. Along with that, components have properties and states. 
+
+------------------------------------------------------------------------
+Why were react hooks introduced?
+
+because of large boiler syntax and higher order component being complex to maintain state
+
+------------------------------------------------------------------------
+
+

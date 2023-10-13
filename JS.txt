@@ -68,3 +68,12 @@ DOM
 Document Object Model is a Programming Interface for Html and XML documents
 
 
+Origin and features of js
+----------------------
+Was developed by Brendon Eich in 1995 motivation to make web page interactive and dynamic
+loosely typed
+dynamically typed
+support oop,functional(functions are first class objects) and procedural
+supports closures (python also have closures)
+
+
