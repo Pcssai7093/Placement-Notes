@@ -106,4 +106,32 @@ React functional components name should be Capitalize
 ** UseState Hook
 Used to create state variables which are used to manage state in react functional components
 
+-----------------------------------------------------------------------
+
+key for react elements
+
+used to unique identify elements unique for fast crud operation on dom
+
+-----------------------------------------------------------------------
+
+JSX
+
+extension of js that allows to include html in js
+** with and without JSX to create html elements in react
+
+without JSX
+
+const text = React.createElement('p', {}, 'This is a text');
+const container = React.createElement('div','{}',text );
+ReactDOM.render(container,rootElement);
+
+with JSX
+
+const container = (
+<div>
+  <p>This is a text</p>
+</div>
+);
+ReactDOM.render(container,rootElement)
+
 
