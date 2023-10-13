@@ -134,4 +134,8 @@ const container = (
 );
 ReactDOM.render(container,rootElement)
 
+-----------------------------------------------------
+
+class components vs functional components
+
 
