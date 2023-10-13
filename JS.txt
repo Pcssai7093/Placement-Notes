@@ -70,7 +70,8 @@ Document Object Model is a Programming Interface for Html and XML documents
 
 Origin and features of js
 ----------------------
-Was developed by Brendon Eich in 1995 motivation to make web page interactive and dynamic
+Was developed by Brendon Eich in 1995 motivation to make web page interactive and dynamic at netscpape communications
+** mocha was the initial name
 loosely typed
 dynamically typed
 support oop,functional(functions are first class objects) and procedural
