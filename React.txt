@@ -56,7 +56,7 @@ function Header() {
 
 useContext hook is used to consume the context by context.provider
 useMemo is used to memoize a function result or computation it returns a memoized values
-useCallback is used to memoize a function preventing uneceesay recreating of functions on component rerendings
+useCallback is used to memoize a function preventing unnecessary recreating of functions on component re-renderings
 useMemo and useCallback both accept dependency array.
 
 ---------------------------------------------------------
@@ -138,4 +138,19 @@ ReactDOM.render(container,rootElement)
 
 class components vs functional components
 
+components are building blocks are react applications
 
+-----------------------------------------------------
+
+*** React.memo
+
+React.memo is a Higher Order Component that is used for optimizing functional components by preventing unnecessary renders when props are not changed
+* Note: It only shallow compares the values of props
+
+import React from 'react';
+
+const MyComponent = (props) => {
+  // Component logic here
+};
+
+export default React.memo(MyComponent);
