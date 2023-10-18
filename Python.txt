@@ -1,0 +1,23 @@
+Python is a high level, interpreted, dynamically typed and strongly typed language
+python support multiple paradigms of programming
+
+python builtin data types:
+
+1. numeric data types
+int
+float
+bool
+complex
+
+2. sequence data types
+list
+tuple
+str
+range
+
+3. mapping data types
+map
+
+4. set data types
+set
+frozenset (immutable set)
