@@ -21,3 +21,5 @@ map
 4. set data types
 set
 frozenset (immutable set)
+
+** pass in python represents a null operations
