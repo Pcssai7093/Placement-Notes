@@ -207,3 +207,27 @@ methods
 -> s.union(set1,set....,etc)
 -> s.update(set1,set....,etc)
 
+Set operators
+-> | s1|s2 // union
+-> + intersection
+-> - difference
+-> ^ union-intersection (symmetric difference)
+
+-----------------------------------------------------
+
+Python list comprehensions
+
+Sytax
+[expression for item in iterable if condition == True]
+Examples:
+d={k:0 for k in range(10)}
+print(d)
+a=[k for k in range(10) if(k%2==0)]
+print(a)
+
+** list comprehensions can be used in sets,list and dictionaries
+
+-----------------------------------------------------------
+
+python strings
+
