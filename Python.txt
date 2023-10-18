@@ -23,3 +23,79 @@ set
 frozenset (immutable set)
 
 ** pass in python represents a null operations
+
+** implicit type casting happens in python during arithmatic computation of different numberical types
+example: 1*1.01 give a float
+
+**
+python is operator compares the identity of values or variable
+a is b(compares the identity of a with b)
+
+
+********
+In Python, "interning" is an optimization technique used to store and reuse immutable objects (such as small integers, strings, and some other types) to save memory and improve performance. Interning is achieved by storing these objects in a cache so that when you create a new object with the same value, Python can reuse the existing object from the cache rather than creating a new one.
+
+variables with same values point to same memory location at the start of the program to save memory when update they will be assigned different memory location
+
+example:
+a=123123123121212
+b=123123123121212
+print(id(a),id(b))
+b+=1
+print(id(a),id(b))
+print(a,b)
+
+
+output
+-----------
+139661619620144 139661619620144
+139661619620144 139661619749216
+123123123121212 123123123121213
+
+*****
+The difference between import and from import in Python is:
+
+import imports an entire code library.
+from import imports a specific member or members of the library.
+
+******
+from math import sqrt, floor
+
+
+**
+Exception handling in python
+
+
+try:
+
+except:  (can catch specific exception   ex:  except Exemption_name as e  )
+
+else:
+
+executes if no exception
+
+finally:
+
+execute at end always
+
+as cleanup funtion
+
+-------------------------
+
+** raising and catching custom exceptions
+
+try:
+    raise Exception("Sorry, no numbers below zero")
+except Exception as e:
+    print(e)
+
+
+*** Exception is type class
+
+
+-----------------------------------------
+
+** del keyword
+
+delete objects are values in sequence data types
+
