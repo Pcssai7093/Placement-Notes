@@ -99,3 +99,111 @@ except Exception as e:
 
 delete objects are values in sequence data types
 
+a=[1,2,3,4]
+del a[0]
+print(a)
+
+output:
+[2, 3, 4]
+
+
+--------------------------------------------------------
+
+** immutable objects are hashable in python
+only hashable objects can be put in python states
+List are not hashable in python but tuples are hashable
+
+
+------------------------------------------------------
+
+shallow copying vs deep copying in python
+
+shallow copying : copy the references of the objects
+
+deep copy: create a new object with same value
+
+!! Note: This effect only seen with copy method when arrays have nested arrays or objects
+
+Example::
+
+a=[[1,2],3,4]
+b=[*a]
+c=a.copy()
+print(a,b,c)
+a[0][0]=5
+print(a,b,c)
+
+Output:
+[[1, 2], 3, 4] [[1, 2], 3, 4] [[1, 2], 3, 4]
+[[5, 2], 3, 4] [[5, 2], 3, 4] [[5, 2], 3, 4]
+
+
+Python * operator also do shallow copy
+----------------------------------------------------------
+
+Lists in python
+-> sequence data type
+-> mutable
+-> hashable
+-> indexed
+-> can have different data type objects in same list 
+
+methods
+Let x be the list
+-> x.insert(index,value)
+-> x.append(value)
+-> x.extend(other_list)
+-> x.copy()
+-> x.sort()
+-> x.index() (raise exception if value not in list)
+-> value in x
+-> x.pop(index_to_remove_default_-s)
+-> x.clear() // empties list
+-> x.count(value) // return the frequency of value
+-> x.remove(value) // remove first item with the specified value
+-> x=x+x
+
+--------------------------------------------------------------
+
+Tuples in python
+-> sequece data type
+-> immutable
+-> indexed
+-> hashable
+-> orderd
+-> elements in the tuple cannot be modified
+
+methods
+let t be the tuple
+-> t.count(value)
+-> t.index(value)
+-> value in t
+-> ordered
+-> t+t
+
+--------------------------------------------------------------
+
+Sets in Python
+-> mutable
+-> not hashable
+-> not indexed
+-> unordered
+-> elements can be modified
+
+methods
+-> s.add(value)
+-> s+s
+-> s.remove(value)
+-> s.clear()
+-> s.copy()
+-> s.pop() // remove random element from set
+-> s.intersection(set1,set....,etc)
+-> s.intersection_update(set1,set....,etc)
+-> s.difference(set1,set....,etc)
+-> s.difference_update(set1,set....,etc)
+-> s.issubset(set2)
+-> s.issuperset(set2)
+-> s.isdisjoint(set2)
+-> s.union(set1,set....,etc)
+-> s.update(set1,set....,etc)
+
