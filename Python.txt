@@ -166,7 +166,7 @@ Let x be the list
 --------------------------------------------------------------
 
 Tuples in python
--> sequece data type
+-> sequence data type
 -> immutable
 -> indexed
 -> hashable
@@ -306,3 +306,68 @@ print(x)
 -> str.rpartion()
 -> str.swapcase()
 
+
+
+-------------------------------------------------------
+inheritance of attributes python
+class p:
+    n="he"
+    def __init__(self,name):
+        self.name=name
+    def display(self):
+        print(self.name)
+        
+class c(p):
+    
+    def __init__(self,name,age):
+        super().__init__(name)
+        self.age=age
+        
+    def display(self):
+        print(self.age,end=" ")
+        super().display()
+
+o1=p("raja")
+o2=c("ramu",10)
+o2.display()
+# o1.display()
+print(p.n)
+
+output:
+-------
+10 ramu
+he
+-------------------------------------------------------
+
+Python checking type of variable
+
+string
+1. if s is the string
+if(type(s)==str)
+2. integers
+if(type(num)==int)
+
+
+
+
+-------------------------------------------------------
+
+*****
+Asserts in Python
+
+// meaning of assert: state is a confident manner
+// assert in python check a condition if condition fails throws error
+
+1. asserts without message
+a=0
+assert a!=0
+output:
+AssertionError
+
+2. asserts with message
+a=0
+assert a!=0,"value of a is zero"
+output:
+AssertionError: value of a is zero
+
+-----------------------------------------------------------------
