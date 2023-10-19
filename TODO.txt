@@ -1,2 +1,1 @@
 2. datetime processing in python
-3. python collections
