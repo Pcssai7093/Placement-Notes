@@ -451,8 +451,34 @@ output
 
 ----------------------------------------------------------------------
 Python collections
+The collection Module in Python provides different types of containers. A Container is an object that is used to store different objects and provide a way to access the contained objects and iterate over them. Some of the built-in containers are Tuple, List, Dictionary, etc. In this article, we will discuss the different containers provided by the collections module.
 
-
-
+containers or classes in python collections
+   Counters
+   OrderedDict
+   DefaultDict
+   ChainMap
+   NamedTuple
+   DeQue
+   UserDict
+   UserList
+   UserString
 ----------------------------------------------------------------------
+*****
+
+Python heapq module
+
+
+import heapq
+a=[1,3...]
+hp=heapq.heapify(a)
+heapq.heappush(hp,elem)
+heapq.pop(hp)
+
+
+Note: if you want have maxheap make elements negative as heapq by default is min-heap
+----------------------------------------------------------------------
+
+
+
 
