@@ -29,7 +29,7 @@ variable declared with let have block scope and are not hoisted.
 
 * self invoking functions in js
 -----------------------------------
-funtion fun(){
+function fun(){
 code
 }();
 
