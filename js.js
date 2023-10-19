@@ -130,3 +130,35 @@ str3 = "121";
 console.log(str1 + str2 + String(num1));
 console.log(parseInt(str3) + 12);
 console.log(parseFloat(str3) + 1.11);
+console.log(Object(str3) + "hello");
+
+if ([].length) {
+  console.log("in if");
+}
+// ! 0,null,undefined,false are false in js ([] is not false)
+
+//  * string length
+str4 = "hello";
+console.log(str4.length);
+console.log(typeof num1.toString());
+
+// * type casting in js
+
+// * to numbers
+// parsetFloat(val)
+// Number(val)
+// parseInt(val)
+
+// * to strings
+// String(val)
+// Object.toString() // Number.toString()
+
+o1 = { 1: "hello" };
+console.log(JSON.stringify(o1).length);
+
+// * to boolean
+
+b1 = true;
+console.log(typeof b1);
+console.log(typeof typeof b1);
+// !  typeof returns a string
