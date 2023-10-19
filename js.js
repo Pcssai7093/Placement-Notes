@@ -63,6 +63,7 @@ var name = "chandra";
   console.log(name);
 }
 console.log(name);
+
 // * var
 // variables declared with var are global and hoisted
 // variable can be redeclared in the subscopes but if the modifications reflect globally
@@ -93,3 +94,39 @@ console.log(name);
 //   console.log(var1);
 // }
 // console.log(var1);
+
+console.log("--------Data types--------");
+// * Data types
+// primitive data types;
+// Numbers
+// Strings
+// Boolean
+// undefined
+// null
+
+let var1 = null;
+let car = undefined;
+console.log(typeof var1);
+console.log(typeof car);
+console.log(car, var1);
+
+// Non primitive data types
+// Arrays
+// objects
+// Functions
+
+console.log(typeof f5);
+console.log(typeof Math.PI);
+console.log(typeof console.log);
+function f6(f, str) {
+  f(str);
+}
+f6(console.log, "console log function passed");
+
+num1 = 123;
+str1 = "hello";
+str2 = "bro";
+str3 = "121";
+console.log(str1 + str2 + String(num1));
+console.log(parseInt(str3) + 12);
+console.log(parseFloat(str3) + 1.11);
