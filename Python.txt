@@ -394,3 +394,65 @@ re.X
 ** can use multiple flags with syntax : flags = re.I | re.M
 
 ----------------------------------------------------------------------
+
+lambda functions in python
+
+area=lambda a,b:a*b
+
+----------------------------------------------------------------------
+****
+ternary operator in python
+// checking the value of x is positive
+res=True if x>0 else False
+
+----------------------------------------------------------------------
+arbitary number of arguments
+
+def f(*a):
+    print(a)
+f(11,13)
+
+----------------------------------------------------------------------
+
+
+Python taking command line arguments *** / need to use sys module
+import sys
+
+print 'Number of arguments:', len(sys.argv), 'arguments.'
+print 'Argument List:', str(sys.argv)
+
+
+----------------------------------------------------------------------
+***************
+__name__ global variable
+contains "__main__" if the python executed as the main program
+contains name of the file if the program is executed as module
+
+
+
+******
+
+----------------------------------------------------------------------
+
+Python sort,sorted
+
+sort only for list and do inplace
+sorted used for most iterables returns a new object (can be used with strings)
+
+a=[1,1,2,3,3,-2,23,2]
+a.sort(key=lambda x:-x,reverse=False)
+na=sorted(a,key=lambda x:-x,reverse=False)
+print(a)
+print(na)
+
+output
+[23, 3, 3, 2, 2, 1, 1, -2]
+[23, 3, 3, 2, 2, 1, 1, -2]
+
+----------------------------------------------------------------------
+Python collections
+
+
+
+----------------------------------------------------------------------
+
