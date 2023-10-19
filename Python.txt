@@ -371,3 +371,26 @@ output:
 AssertionError: value of a is zero
 
 -----------------------------------------------------------------
+
+python regex
+
+methods:
+import re
+
+-> re.compile()  // to create 
+-> re.match(pattern,string,flags) // find a match from the start can be a substring
+-> re.fullmatch(pattern,string,flags) // whole string should satisfy the pattern
+-> re.split(patter,string,maxsplit,flags)
+-> re.sub(pattern,replace_string,org_string,flags)
+-> re.search(pattern, string,flags)
+-> re.findall(pattern, string,flags)
+
+values of flags argument
+flags=
+re.I // ignore case
+re.M
+re.X
+
+** can use multiple flags with syntax : flags = re.I | re.M
+
+----------------------------------------------------------------------
