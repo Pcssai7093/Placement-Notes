@@ -228,6 +228,81 @@ print(a)
 ** list comprehensions can be used in sets,list and dictionaries
 
 -----------------------------------------------------------
+IMp methods
+ord(character_Value) // returns the ascii value
+chr(ascii_number) // returns character for that ascii
+
+-----------------------------------------------------------
 
 python strings
+-> immutable
+-> hashable
+-> sequence data typed
+-> indexed
+
+****  multiline strings
+a = ''' Hello
+       World!
+       This is a
+       Multiline String.'''
+       
+print(a)
+Output:
+Hello
+World!
+This is a
+Multiline String.
+
+
+*** String format
+b=10
+print(f"value of b is {b}")
+Output
+value of b is 10
+
+string methods
+let str be string
+-> str.capitalize()
+-> str.casefold() // to lowercase
+-> str.upper()
+-> str.lower()
+-> str.isupper() // check all the characters in a string are uppercase
+-> str.islower()
+-> str.split(separator, maxsplit)
+-> str.rsplit(separator, maxsplit) // start splitting from right
+-> "delimeter".join(*strings...)
+-> str=str+str
+-> str.index(CHARACTER/STRING) // find the index of the string else throws exception
+-> "str_value" in str
+->  ** str.find("STRING") // returns the first index of STRING in str if not returns -1
+-> str.format(values,...) // format the specified values in a string
+Examples:
+txt1 = "My name is {fname}, I'm {age}".format(fname = "John", age = 36)
+txt2 = "My name is {0}, I'm {1}".format("John",36)
+txt3 = "My name is {}, I'm {}".format("John",36)
+-> isalpha()
+-> isdecimal()
+-> isdigit()
+-> ** str.strip(string_of_chars_that_need_to_be_strped)
+example:
+print("...rtx".strip("r."))
+removes 'r' and '.' from ends
+-> str.lstrip()
+-> str.rstrip()
+-> str.partition()
+Example:
+Search for the word "bananas", and return a tuple with three elements:
+
+1 - everything before the "match"
+2 - the "match"
+3 - everything after the "match"
+
+txt = "I could eat bananas all day"
+
+x = txt.partition("bananas")
+print(x)
+-> str.replace(old,new)
+-> str.rfind() // search from right return first right
+-> str.rpartion()
+-> str.swapcase()
 
