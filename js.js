@@ -19,7 +19,7 @@
 })();
 
 // * functions expression (these are not hoisted)
-f4 = function (a, b) {
+f4 = function (a, b = 10) {
   return a + b;
 };
 
@@ -99,6 +99,7 @@ console.log("--------Data types--------");
 // * Data types
 // primitive data types;
 // Numbers
+// BigInt
 // Strings
 // Boolean
 // undefined
@@ -114,6 +115,7 @@ console.log(car, var1);
 // Arrays
 // objects
 // Functions
+// date
 
 console.log(typeof f5);
 console.log(typeof Math.PI);
@@ -153,8 +155,8 @@ console.log(typeof num1.toString());
 // String(val)
 // Object.toString() // Number.toString()
 
-o1 = { 1: "hello" };
-console.log(JSON.stringify(o1).length);
+let o32 = { 1: "hello" };
+console.log(JSON.stringify(o32).length);
 
 // * to boolean
 
@@ -162,3 +164,119 @@ b1 = true;
 console.log(typeof b1);
 console.log(typeof typeof b1);
 // !  typeof returns a string
+
+// ! single line comments " //"
+// ! multiline comments
+/*
+# multiline
+# comments
+*/
+
+// ! numbers can be represented like this
+console.log(1_2_3 + 1);
+
+// ! variables declared but not assigned a value have value undefined
+
+console.log("---js operators-----");
+// * js arithmetic operators
+// +,-,*,/,%,**(exponentiation),++,--,
+
+// *** refer https://www.w3schools.com/js/js_operators.asp for operators
+
+// ! "==" operator compares the value and ignore type
+// ! "===" operator compares the value and type
+
+console.log(1 == "1");
+console.log(1 === "1");
+
+// ! js logical operators &&,||,!
+
+console.log(typeof BigInt(1));
+
+// * Js evaluated expressions from left so result can be different during string cohersion
+
+let num = 10;
+console.log(typeof num);
+
+// * variables in js are loosely typed can be implicitly converted to other types
+// # this wont happend in python as type of the variable wont change unless new declaration (strongly typed)
+
+let o1 = { name: "chandra", age: 10 };
+console.log(o1);
+// * delete property
+delete o1.name;
+// o1["grade"] = 3;
+o1.grade = 12;
+console.log(o1);
+// * object property access ways
+console.log(o1["grade"], o1.grade);
+
+// * Strings
+console.log("-----Strings------------");
+
+// ! can be written with single or double quotes
+let str5 = "hello"; // # can use single quotes extension change on save issue
+let str6 = "hello";
+console.log(str5, str6);
+
+//! can be printed like this
+console.log('hello "brother" how\'s you lunch u');
+console.log("helo 'bro'");
+
+let str7 = "primtive string";
+let str8 = new String("object string");
+console.log(typeof str7, typeof str8);
+console.log(str8.length);
+console.log(str7.length);
+let str9 = "primtive string";
+let str10 = String("primtive string");
+console.log(typeof str10);
+console.log(str9 == str10);
+
+// **  Note variable created with data type constructors are not objects type when used "new" keyword then only objects type are created
+// ! new is used to create instance of user defined objects or built in data types
+
+// *** String comparision
+// ** In Js objects are compared by reference not value
+// ! if strings are created with "new" keyword they cannot be compared with "===" or "=="
+
+// * String comparisions
+// ! operators compare using ascii values of letters
+console.log("hello" > "Hello");
+// ! localcompare method compares alphabetical order but not the ascii value
+console.log("hello".localeCompare("Hello"));
+
+// * String methods
+// toLowerCase()
+// toUpperCase()
+// charAt()
+// concat string.concat(string1, string2, ..., stringX)
+// endswith()
+// startswith()
+// includes()
+// indexOf("match_STR") // #returns -1 if not found
+// lastIndexOf()
+// length
+// str1.localCampare(str2)
+// str.match(regex) // # explore
+// str.repeat(n)
+// str.replace(old,new)
+// str.replaceAll(old,new)
+// str.search(regex) // # explore
+// str.slice(start,end[optional default end of the string])) // ! [start,end)
+// str.substr(startPos,Number_OF_Characte_from_POs) // ! extracts the number of characters from a specified position
+// str.substring(start,end) // ![start,end)
+// # extracts character between specified position as slice
+
+let str12 = new String("chandra");
+console.log(typeof str12);
+// object.toString() // # object(numbers,bool,non prim strings) to string
+console.log(new Boolean(true).toString());
+console.log(typeof str12.toString());
+// valuesOf() // # converts non primitive string object to string
+console.log(str12.valueOf());
+// str.trim() // # only trim white spaces from both ends of the string (no params)
+// str.trimStart()
+// str.trimEnd()
+console.log("   Hello".trim());
+// str.split(separator,limit)
