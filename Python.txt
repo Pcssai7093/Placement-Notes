@@ -358,7 +358,7 @@ if(type(num)==int)
 *****
 Asserts in Python
 
-// meaning of assert: state is a confident manner
+// meaning of assert: state in a confident manner
 // assert in python check a condition if condition fails throws error
 
 1. asserts without message
@@ -481,6 +481,23 @@ heapq.pop(hp)
 
 Note: if you want have maxheap make elements negative as heapq by default is min-heap
 ----------------------------------------------------------------------
+
+*** decorators in python
+// decorators are wrapper functions for function in python that can be used to dynamically alter the functionality of a function in run time can be used in logging, measuring time , synchronization
+
+Example:
+**** decorator function with arguments
+
+def mydecor(fadd):
+    def wrapper(a,b):
+        print("function add is called")
+        return fadd(a,b)
+    return wrapper
+
+@mydecor
+def fadd(a,b):
+    return a+b
+
 
 
 
