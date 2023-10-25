@@ -280,3 +280,15 @@ console.log(str12.valueOf());
 // str.trimEnd()
 console.log("   Hello".trim());
 // str.split(separator,limit)
+
+// ** Js string template/ formatting
+// ! can be done using back quotes ``
+let place = "hydabood";
+let pop = 122;
+console.log(`The city ${place} has populations ${pop}`);
+
+// * JS Numbers
+console.log("-----Numbers------");
+console.log(2e-2);
+console.log(2e2);
+console.log(2 ** 2);

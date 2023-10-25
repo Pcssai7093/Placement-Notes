@@ -146,6 +146,7 @@ Lists in python
 -> mutable
 -> hashable
 -> indexed
+-> ordered
 -> can have different data type objects in same list 
 
 methods
@@ -157,7 +158,7 @@ Let x be the list
 -> x.sort()
 -> x.index() (raise exception if value not in list)
 -> value in x
--> x.pop(index_to_remove_default_-s)
+-> x.pop(index_to_remove_default_-1)
 -> x.clear() // empties list
 -> x.count(value) // return the frequency of value
 -> x.remove(value) // remove first item with the specified value
@@ -170,7 +171,7 @@ Tuples in python
 -> immutable
 -> indexed
 -> hashable
--> orderd
+-> ordered
 -> elements in the tuple cannot be modified
 
 methods
