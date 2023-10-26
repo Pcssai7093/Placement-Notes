@@ -66,3 +66,6 @@ private variables and methods
 static and final variables/methods can be hid with same name in child class
 if not they refer to the parent data
 
+
+inherited means a copy of variables and methods are created in child class
+but only accessible means original variables are methods are referenced no new are created in child class like static and final variables are not inherited only accessible in child class
