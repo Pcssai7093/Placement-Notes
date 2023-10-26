@@ -38,16 +38,16 @@ Occurs duing method overloading
 Arguments and functions name are part of method signature
 if the signature is same it is called method overriding else it is called method overloading
 * method overloading is happens in the same class
-* method overriding is heppens between child and parent class
+* method overriding is happens between child and parent class
 
 
 Inheritance: inheriting the methods and attributes from the parent
 
 
-Abstraction: Simplyfying complex systems only expose necessary to child classes to implementation
+Abstraction: Simplifying complex systems only expose necessary to child classes to implementation
 
 
-Interface: Class with only method decalarations but not definitions
+Interface: Class with only method declarations but not definitions
 
 
 Exception: interrupt during the runtime execution of program
@@ -60,7 +60,7 @@ private variables and methods
 
 * protected and public variables can be inherited
 * static and final final variables cannot be inherited but accessible by child class
-* private variabels are not accessable and inherited to parent classes
+* private variables are not accessable and not inherited to parent classes
 
 
 static and final variables/methods can be hid with same name in child class
