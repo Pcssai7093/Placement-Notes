@@ -20,5 +20,76 @@ kernel: core part of os, interface to the computer hardware for user programs/us
 
 shell: interface to the kernel
 
-system call: is a mechanism using which a user program can request a service from the kernel for 
-which it does not have the permission to perform
+system call: is a mechanism using which a user program can request a service from the kernel/OS for 
+which it does not have the permission to perform (user can be in user mode but request for privileged tasks)
+
+monolithic kernel: is an operating system architecture where the entire operating system is working in kernel space.
+layered: os code is layered into multiple layers
+
+A bootstrap program is the first code that is executed when the computer system is started.
+
+device driver: enables communication between io devices and computer
+---------------------------------------------------------------------------------------
+
+// *** process and process scheduling
+
+Registers: registers are memory for the processes for rapid computations to store operands and instructions
+
+process: A process is a program in execution
+-> A process consists of 
+1. stack
+2. heap
+3. data (global variables)
+4. text (program code)
+
+
+program is passive, process in active
+
+A process is represented in memory as PCB (process control block)(Data structure)
+-> consists of
+1. state
+2. scheduling information
+3. io information
+4. values of program counters and registers
+5. Accounting information - process id, CPU- and real- time used, time limits, etc
+
+
+*** states of a process
+1. new
+2. ready
+3. running
+4. waiting
+5. terminate
+
+-------------------------------------------------------------------------------
+
+*** Process scheduling and algorithms
+
+process scheduling: specific scheduling for executing of processes in memory
+
+
+Scheduling queues (used for process scheduling)
+1. job queues: total processes in the system
+2. ready queue: list of processes loaded into memory
+3. device queues: process waiting for i/o devices
+
+
+types of scheduler:
+
+1. Long term scheduler: load the processes into memory submitted by the user (controls the degree of multiprogramming)
+2. short term scheduler: select the processes in memory and allocate the CPU
+3. mid term scheduler: removes the process from memory (to free memory of reduces degree of multiprogramming)
+
+zombie process: is a process that has terminated but its PCB still exists because its parent has not 
+yet accepted its return value.
+
+thread: thread is a unit of execution within a process
+
+multithreading: multiple threads of a single process are executing concurrently (by different processors(parallelization) or context switching)
+
+** Inter-process Communication models
+1. Shared memory
+2. Message passing
+
+
+!! (concurrency is an illusion of parallel processing done using context switching)
