@@ -93,3 +93,28 @@ multithreading: multiple threads of a single process are executing concurrently 
 
 
 !! (concurrency is an illusion of parallel processing done using context switching)
+
+
+== Preemptive and Non Preemptive scheduling
+1. non Preemptive scheduling: A process keeps the cpu until it finishes its execution or until it goes to waiting state. a new process can be executed.
+2. Preemptive:  A process can be forced to stop the execution and be pushed to ready queue/memory
+
+dispatcher: is the module of the operating system that gives control of the CPU to the process 
+selected by the CPU scheduler. 
+
+Dispatch latency: is the time taken to stop a process and start another. 
+Dispatch latency is a pure overhead. 
+
+// *** Scheduling algorithms
+1. first-come-first-served (non Preemptive)
+2. shortest-job-first-scheduling (Preemptive or non Preemptive)
+3. priority-scheduling (Preemptive or non Preemptive) // ageing can be including for a process
+4. round-robin-scheduling (Preemptive to make an illusion of concurrency)
+
+cpu burst time: time that process needs to complete
+
+Turnaround time = completion time - arrival time
+Response time = start time - arrival time
+Throughput = number of processes/total time
+waiting time = Turnaround time - cpu burst time
+
