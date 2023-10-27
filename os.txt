@@ -1,0 +1,24 @@
+computer hardware : collection of physical elements of a computer
+computer software: is a collection of programs stored and executed by computer
+
+Application software: performs specific task to the user
+system software: platform for application software and manage the computer hardware
+
+Operating System : interface between user and hardware
+Software that manages resources of all the software and hardware of a computer
+
+User -> Application program -> OS -> Hardware
+
+types of os:
+batch process : process programs in batches submitted by the User
+multiprogramming: ability of computer to load multiple programs into memory and execute them continuously
+multitasking: ability of computer to switch between programs rapidly simulating concurrent execution
+multiprocessing: computer having multiple processors each executing a program
+
+
+kernel: core part of os, interface to the computer hardware for user programs/user
+
+shell: interface to the kernel
+
+system call: is a mechanism using which a user program can request a service from the kernel for 
+which it does not have the permission to perform
